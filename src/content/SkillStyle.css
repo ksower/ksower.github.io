@@ -1,0 +1,89 @@
+.Skill{
+    width: 100%;
+    background: rgb(220, 255, 203);
+}
+.skill-empty{height:100px;}
+
+.skill-wrapper{
+    width: 1080px;
+    margin-left: 350px;
+}
+
+/* SKILL 페이지 타이틀 부분 */
+.skill-wrapper .title{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.skill-tap{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    justify-items: center;
+}
+#exp{
+    width: 350px;
+}
+
+/* SKILL 페이지 skill 별 박스 부분 */
+#skills{
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#skills #proficiency{           /* 퍼센테이지(글자) */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    align-items: center;
+    justify-items: center;
+}
+#skills #progress{              /* 100% 길이(베이스) */
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background: gray;
+}
+#skills #progress-value{        /* n%(글자에 맞춰서) */
+    height: 10px;
+    border-radius: 30px;
+    background: black;
+}
+
+/* SKILL 이미지 */
+.skill-img{
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.skill-img img{
+    width: 100px;
+}
+
+
+
+
+/* SKILL 페이지 자격증 */
+.certificate{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.certificate div{
+    width: 150px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px gray;
+}

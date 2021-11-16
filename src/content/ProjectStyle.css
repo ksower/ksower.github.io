@@ -1,0 +1,54 @@
+.Project{
+    width: 100%;
+}
+.proj-empty{height:100px;}
+
+.proj-wrapper{
+    width: 1080px;
+    margin-left: 350px;
+}
+
+
+/* PROJECT 페이지 메뉴바 */
+.proj-menubar{
+    margin-top: 50px;
+}
+.proj-menubar #menus button{            /* 각 버튼 별 스타일 */
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-left: 3px solid white;
+    outline: none;
+    cursor: pointer;
+    background: rgb(121, 170, 142);
+}
+.proj-menubar #menus button:hover{
+    background: gray;
+}
+
+/* PROJECT 페이지 프로젝트 부분(갤러리처럼 표현) */
+.proj-taps{
+    width: 100%;
+    height: 500px; /* 높이는 지울 예정 */
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px gray inset;
+    overflow: auto;
+    background:rgb(97, 136, 114);
+}
+#ptap{
+    width: 200px;
+    height: 240px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px gray;
+    background: white;
+}
+
+
+
+@media screen and (max-width: 1080px){
+    .proj-wrapper{width:100%;}
+}
