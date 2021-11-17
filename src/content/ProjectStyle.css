@@ -8,6 +8,11 @@
     margin-left: 350px;
 }
 
+.proj-title{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
 
 /* PROJECT 페이지 메뉴바 */
 .proj-menubar{
@@ -21,7 +26,6 @@
     border-left: 3px solid white;
     outline: none;
     cursor: pointer;
-    background: rgb(121, 170, 142);
 }
 .proj-menubar #menus button:hover{
     background: gray;
@@ -35,7 +39,7 @@
     flex-wrap: wrap;
     box-shadow: 5px 5px gray inset;
     overflow: auto;
-    background:rgb(97, 136, 114);
+    background:rgb(204, 204, 204);
 }
 #ptap{
     width: 200px;

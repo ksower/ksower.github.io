@@ -1,7 +1,7 @@
 .Nav{
     width: 200px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -10,19 +10,23 @@
 
 
 /* 메뉴 버튼 */
+.menubar{
+    margin-left: 80px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
 .menu-btn{
     width: 60px;
     height: 60px;
+    position: absolute;
     border-radius: 50px;
-    border: 2px solid black;
-    margin-left: 80px;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    outline: none;
-    cursor: pointer;
     background: black;
+    cursor: pointer;
+    outline: none;
+    z-index: 100;
 }
-.menu-btn div{
+.menu-btn:hover{background:gray;}
+.menubar div:nth-of-type(n+2){
     width: 50px;
     height: 50px;
     position: absolute;
@@ -35,11 +39,11 @@
     transition: 0.5s;
 }
 /* 메뉴 버튼 토글 액션(메뉴 펼치기) */
-.menu-btn.active div:nth-of-type(1){margin-left:100px;}
-.menu-btn.active div:nth-of-type(2){margin-top:70px; margin-left: 100px;}
-.menu-btn.active div:nth-of-type(3){margin-top:140px; margin-left: 100px;}
-.menu-btn.active div:nth-of-type(4){margin-top:210px; margin-left: 100px;}
-.menu-btn.active div:nth-of-type(5){margin-top:280px; margin-left: 100px;}
+.menubar.active div:nth-of-type(2){margin-left:100px;}
+.menubar.active div:nth-of-type(3){margin-top:70px; margin-left: 100px;}
+.menubar.active div:nth-of-type(4){margin-top:140px; margin-left: 100px;}
+.menubar.active div:nth-of-type(5){margin-top:210px; margin-left: 100px;}
+.menubar.active div:nth-of-type(6){margin-top:280px; margin-left: 100px;}
 
 
 /* 현재 페이지 */

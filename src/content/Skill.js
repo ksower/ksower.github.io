@@ -20,11 +20,13 @@ function Skill(props){
 
                 <div className='skill-tap'>
                     <div id='exp'>
-                        저는 인공지능 어쩌구를 위해 파이썬 ~~~~, 빅데이터는 어떻고~~~~~~~, 웹으로 표현하기......
+                        저는 python을 통해 알고리즘과 자료구조를 공부하였고, 더 나아가 인공지능에 사용할 데이터를 정제하기 위해 numpy, pandas 등의 라이브러리를 공부하였습니다.
+                        sklearn으로 기본적인 인공지능에 대해 공부하였고, keras와 yolo, tensorflow 등을 활용하여 모델을 직접 구성 및 학습한 경험이 있습니다.
+                        모델 혹은 서비스를 개발하다 거대한 데이터로 가치를 창출하고 서비스를 제공하는 것에 대해 흥미를 느껴 데이터 분석과 빅데이터에 관해 공부 및 스킬들을 습득하였습니다.
                     </div>
                     <div id='skills'>
-                        <div className='tap a'>
-                            Python
+                        <div id='tap'>
+                            <b>Python</b>
                             <div id='proficiency'>
                                 <div id='progress'>
                                     <div id='progress-value' style={{width:'85%'}}></div>
@@ -33,8 +35,8 @@ function Skill(props){
                             </div>
                         </div>
 
-                        <div className='tap b'>
-                            JAVA
+                        <div id='tap'>
+                            <b>JAVA</b>
                             <div id='proficiency'>
                                 <div id='progress'>
                                     <div id='progress-value' style={{width:'55%'}}></div>
@@ -43,8 +45,8 @@ function Skill(props){
                             </div>
                         </div>
 
-                        <div className='tap c'>
-                            React
+                        <div id='tap'>
+                            <b>React</b>
                             <div id='proficiency'>
                                 <div id='progress'>
                                     <div id='progress-value' style={{width:'80%'}}></div>
@@ -53,8 +55,8 @@ function Skill(props){
                             </div>
                         </div>
 
-                        <div className='tap d'>
-                            R
+                        <div id='tap'>
+                            <b>R</b>
                             <div id='proficiency'>
                                 <div id='progress'>
                                     <div id='progress-value' style={{width:'40%'}}></div>
@@ -63,8 +65,8 @@ function Skill(props){
                             </div>
                         </div>
 
-                        <div className='tap e'>
-                            Hadoop
+                        <div id='tap'>
+                            <b>Hadoop</b>
                             <div id='proficiency'>
                                 <div id='progress'>
                                     <div id='progress-value' style={{width:'40%'}}></div>

@@ -9,6 +9,10 @@ function Project(props){
             <div className='proj-wrapper'>
                 <div className='proj-empty'></div>
 
+                <div className='proj-title'>
+                    "저는 이런 것들을 해보았습니다."
+                </div>
+
                 <div className='proj-menubar'>
                     <div id='menus'>
                         <button>All</button>

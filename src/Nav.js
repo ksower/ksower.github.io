@@ -8,19 +8,19 @@ function Nav(props){
         setToggle(toggle==='' ? 'active' : '');
     }
 
-
     return(
         <div className='Nav'>
-            <div className={`menu-btn ${toggle}`} onClick={clickToggle}>
-                <div>H</div>
-                <div>P</div>
-                <div>S</div>
-                <div>Pr</div>
+            <div className={`menubar ${toggle}`}>
+                <div className={`menu-btn ${toggle}`} onClick={clickToggle}></div>
+                <div onClick={() => props.goMenu('Home')}>H</div>
+                <div onClick={() => props.goMenu('Profile')}>P</div>
+                <div onClick={() => props.goMenu('Skill')}>S</div>
+                <div onClick={() => props.goMenu('Project')}>Pr</div>
                 <div>C</div>
             </div>
 
             <div id='current-page'>
-                page
+                {props.cur}
             </div>
         </div>
     );

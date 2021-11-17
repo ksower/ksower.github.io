@@ -1,12 +1,12 @@
 import React from 'react';
-import './TitleStyle.css';
+import './HomeStyle.css';
 
-function Title(props){
+function Home(props){
     return(
-        <div className='Title'>
+        <div className='Home'>
             <div>"창의적인 개발자<br/>남기범입니다."</div>
         </div>
     );
 }
 
-export default Title;
+export default Home;

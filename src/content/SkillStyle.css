@@ -18,22 +18,25 @@
 
 
 .skill-tap{
-    width: 100%;
-    margin-top: 30px;
+    width: 980px;
+    margin: auto;
+    margin-top: 40px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 1fr 1.2fr;
     justify-items: center;
 }
 #exp{
-    width: 350px;
+    width: 380px;
 }
 
 /* SKILL 페이지 skill 별 박스 부분 */
 #skills{
     width: 450px;
-    margin-top: 20px;
     margin-bottom: 50px;
+}
+#skills #tap{
+    margin-bottom: 5px;
 }
 #skills #proficiency{           /* 퍼센테이지(글자) */
     width: 100%;
