@@ -1,0 +1,32 @@
+@font-face{
+    font-family: "simplehae";
+    font-display: fallback;
+
+    src: url("./Cafe24Simplehae.ttf") format("truetype"), url("./Cafe24Simplehae.woff")
+        format("woff"), url("./Cafe24Simplehae.eot?iefix") format("embedded-opentype");
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "dangdanghae";
+    font-display: fallback;
+
+    src: url("./Cafe24Dangdanghae.ttf") format("truetype"), url("./Cafe24Dangdanghae.woff")
+        format("woff"), url("./Cafe24Dangdanghae.eot?iefix") format("embedded-opentype");
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "shiningstar";
+    font-display: fallback;
+
+    src: url("./Cafe24Shiningstar.ttf") format("truetype"), url("./Cafe24Shiningstar.woff")
+        format("woff"), url("./Cafe24Shiningstar.eot?iefix") format("embedded-opentype");
+
+    font-weight: 400;
+    font-style: normal;
+}

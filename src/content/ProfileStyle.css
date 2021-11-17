@@ -26,13 +26,16 @@
 }
 .prof-my #intro{                /* 소개글 */
     float: left;
-    font-size: 18px;
 }
-.prof-my #intro p{font-size:20px;}
+.prof-my #intro p{
+    font-size:20px;
+    font-family: 'simplehae';
+}
 .prof-my #intro div{
     width: 610px;
     padding: 30px;
-    font-size: 25px;
+    font-size: 38px;
+    font-family: 'shiningstar';
     border-left: 3px solid gray;
     border-right: 3px solid gray;
     border-radius: 20px;
@@ -52,6 +55,8 @@
 .prof-exp div{
     width: 100%;
     height: 100%;
+    font-family: 'simplehae';
+    line-height: 22px;
     color: gray;
 }
 .prof-exp div h2{

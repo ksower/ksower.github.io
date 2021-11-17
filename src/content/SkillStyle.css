@@ -14,6 +14,7 @@
     width: 100%;
     text-align: center;
     font-size: 35px;
+    font-family: 'dangdanghae';
 }
 
 
@@ -28,6 +29,9 @@
 }
 #exp{
     width: 380px;
+    font-family: "simplehae";
+    font-size: 20px;
+    line-height: 26px;
 }
 
 /* SKILL 페이지 skill 별 박스 부분 */
@@ -36,7 +40,9 @@
     margin-bottom: 50px;
 }
 #skills #tap{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    font-family: 'simplehae';
+    font-size: 20px;
 }
 #skills #proficiency{           /* 퍼센테이지(글자) */
     width: 100%;
@@ -84,7 +90,8 @@
 .certificate div{
     width: 150px;
     padding: 20px;
-    font-size: 18px;
+    font-size: 24px;
+    font-family: 'simplehae';
     text-align: center;
     border: 1px solid black;
     border-radius: 10px;
