@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f787601.chunk.css",
-    "main.js": "/static/js/main.37306533.chunk.js",
-    "main.js.map": "/static/js/main.37306533.chunk.js.map",
+    "main.css": "/static/css/main.0cca4fef.chunk.css",
+    "main.js": "/static/js/main.88567fda.chunk.js",
+    "main.js.map": "/static/js/main.88567fda.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f027f2bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.f027f2bf.js.map",
     "static/js/2.af9ef9c0.chunk.js": "/static/js/2.af9ef9c0.chunk.js",
     "static/js/2.af9ef9c0.chunk.js.map": "/static/js/2.af9ef9c0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6f787601.chunk.css.map": "/static/css/main.6f787601.chunk.css.map",
+    "static/css/main.0cca4fef.chunk.css.map": "/static/css/main.0cca4fef.chunk.css.map",
     "static/js/2.af9ef9c0.chunk.js.LICENSE.txt": "/static/js/2.af9ef9c0.chunk.js.LICENSE.txt",
     "static/media/font.css": "/static/media/Cafe24Simplehae.d8009aac.woff",
+    "static/media/background_1.2ae21859.jpg": "/static/media/background_1.2ae21859.jpg",
+    "static/media/App.css": "/static/media/background_2.32997970.jpg",
     "static/media/face.178ae406.jpg": "/static/media/face.178ae406.jpg",
     "static/media/hadoop.20c73943.png": "/static/media/hadoop.20c73943.png",
     "static/media/python.c01d0a01.jpg": "/static/media/python.c01d0a01.jpg",
@@ -20,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.f027f2bf.js",
     "static/js/2.af9ef9c0.chunk.js",
-    "static/css/main.6f787601.chunk.css",
-    "static/js/main.37306533.chunk.js"
+    "static/css/main.0cca4fef.chunk.css",
+    "static/js/main.88567fda.chunk.js"
   ]
 }
