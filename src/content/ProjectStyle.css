@@ -4,8 +4,10 @@
 .proj-empty{height:100px;}
 
 .proj-wrapper{
-    width: 1080px;
-    margin-left: 350px;
+    width: 1200px;
+    margin-left: 250px;
+    background: white;
+    transition: 0.25s;
 }
 
 .proj-title{
@@ -53,6 +55,12 @@
 
 
 
-@media screen and (max-width: 1080px){
-    .proj-wrapper{width:100%;}
+@media screen and (max-width: 1467px){
+    .proj-wrapper{width:1000px;}
+}
+@media screen and (max-width: 1267px){
+    .proj-wrapper{width:850px;}
+}
+@media screen and (max-width: 1117px){
+    .proj-wrapper{width:100%; margin-left:0;}
 }

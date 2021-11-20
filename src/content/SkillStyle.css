@@ -1,12 +1,14 @@
 .Skill{
     width: 100%;
-    background: rgb(220, 255, 203);
+    background: transparent;
 }
 .skill-empty{height:100px;}
 
 .skill-wrapper{
-    width: 1080px;
-    margin-left: 350px;
+    width: 1200px;
+    margin-left: 250px;
+    background: white;
+    transition: 0.25s;
 }
 
 /* SKILL 페이지 타이틀 부분 */
@@ -96,4 +98,17 @@
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px gray;
+}
+
+
+
+
+@media screen and (max-width: 1467px){
+    .skill-wrapper{width:1000px;}
+}
+@media screen and (max-width: 1267px){
+    .skill-wrapper{width:850px;}
+}
+@media screen and (max-width: 1117px){
+    .skill-wrapper{width:100%; margin-left:0;}
 }

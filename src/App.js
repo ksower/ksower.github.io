@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
 import './fonts/font.css';
+import back2 from './images/background_2.jpg';
 
 import Nav from './Nav.js';
 import Home from './content/Home.js';

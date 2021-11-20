@@ -1,14 +1,27 @@
 .Home{
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: gray;
+    background: transparent;
 }
 
-.Home div{
-    width: 70%;
-    height: 50%;
+.home-wrapper{
+    width: 1200px;
+    height: 100vh;
+    margin-left: 250px;
+    background: rgb(0, 0, 0, 0.3);
+}
+
+.home-wrapper div{
     font-size: 120px;
+    color: rgb(173, 173, 173);
+}
+
+
+@media screen and (max-width: 1467px){
+    .home-wrapper{width:1000px;}
+}
+@media screen and (max-width: 1267px){
+    .home-wrapper{width:850px;}
+}
+@media screen and (max-width: 1117px){
+    .home-wrapper{width:100%; margin-left:0;}
 }

@@ -1,12 +1,16 @@
 .Profile{
     width: 100%;
-    background: rgb(255, 236, 236);
+    background: transparent;
 }
 .prof-empty{height:100px;}
 .prof-wrapper{
-    width: 1080px;
-    margin-left: 350px;
+    width: 1200px;
+    margin-left: 250px;
+    background: white;
+    transition: 0.25s;
 }
+
+
 
 /* PROFILE 페이지 나의 소개 영역 */
 .prof-my{
@@ -22,7 +26,6 @@
     float: left;
     border-radius: 10px;
     border: 1px solid gray;
-    background: white;
 }
 .prof-my #intro{                /* 소개글 */
     float: left;
@@ -40,6 +43,7 @@
     border-right: 3px solid gray;
     border-radius: 20px;
 }
+
 
 
 /* PROFILE 페이지 경험 영역 */
@@ -61,4 +65,16 @@
 }
 .prof-exp div h2{
     color: black;
+}
+
+
+
+@media screen and (max-width: 1467px){
+    .prof-wrapper{width:1000px;}
+}
+@media screen and (max-width: 1267px){
+    .prof-wrapper{width:850px;}
+}
+@media screen and (max-width: 1117px){
+    .prof-wrapper{width:100%; margin-left:0;}
 }
