@@ -29,12 +29,13 @@
     grid-template-columns: 1fr 1.2fr;
     justify-items: center;
 }
-#exp{
+.skill-tap #exp{
     width: 380px;
     font-family: "simplehae";
     font-size: 20px;
     line-height: 26px;
 }
+
 
 /* SKILL 페이지 skill 별 박스 부분 */
 #skills{
@@ -108,6 +109,9 @@
 }
 @media screen and (max-width: 1267px){
     .skill-wrapper{width:850px;}
+    .skill-tap{width:100%; grid-template-columns:1fr;}
+    .skill-tap #exp{width:80%; margin:auto;}
+    #skills{width:70%; margin-top:40px;}
 }
 @media screen and (max-width: 1117px){
     .skill-wrapper{width:100%; margin-left:0;}

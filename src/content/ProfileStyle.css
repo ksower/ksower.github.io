@@ -35,7 +35,7 @@
     font-family: 'simplehae';
 }
 .prof-my #intro div{
-    width: 610px;
+    width: 80%;
     padding: 30px;
     font-size: 38px;
     font-family: 'shiningstar';
@@ -71,9 +71,15 @@
 
 @media screen and (max-width: 1467px){
     .prof-wrapper{width:1000px;}
+    .prof-exp{width:80%;}
+
 }
 @media screen and (max-width: 1267px){
     .prof-wrapper{width:850px;}
+    .prof-my{grid-template-columns:1fr;}
+    .prof-my #intro p{text-align:center;}
+    .prof-my #intro div{margin:auto;}
+    .prof-exp{grid-template-columns:1fr 1fr;}
 }
 @media screen and (max-width: 1117px){
     .prof-wrapper{width:100%; margin-left:0;}
