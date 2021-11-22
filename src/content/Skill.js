@@ -1,11 +1,11 @@
 import React from 'react';
 import './SkillStyle.css';
 
-import Python from '../images/python.jpg';
-import Java from '../images/java.png';
-import Re from '../images/react.png';
-import R from '../images/r.png';
-import Hadoop from '../images/hadoop.png';
+import Python from '../images/language-icon/python.png';
+import Java from '../images/language-icon/java.png';
+import Re from '../images/language-icon/react.png';
+import R from '../images/language-icon/r.png';
+import Hadoop from '../images/language-icon/hadoop.png';
 
 function Skill(props){
 
