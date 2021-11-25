@@ -14,7 +14,8 @@
 
 /* PROFILE 페이지 나의 소개 영역 */
 .prof-my{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: 300px 1fr;
     align-items: center;
@@ -28,7 +29,7 @@
     border: 1px solid gray;
 }
 .prof-my #intro{                /* 소개글 */
-    float: left;
+    margin: auto;
 }
 .prof-my #intro p{
     font-size:20px;
@@ -66,6 +67,7 @@
 .prof-exp div h2{
     color: black;
 }
+
 
 
 

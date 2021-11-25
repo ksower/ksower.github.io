@@ -2,7 +2,8 @@
     width: 100%;
     background: transparent;
 }
-.skill-empty{height:100px;}
+.skill-empty1{height:80px;}
+.skill-empty2{height:100px;}
 
 .skill-wrapper{
     width: 1200px;
@@ -124,4 +125,6 @@
 }
 @media screen and (max-width: 500px){
     .skill-title{font-size:28px;}
+    .skill-tap #exp{font-size:18px;}
+    .certificate div{width:120px; font-size:20px;}
 }

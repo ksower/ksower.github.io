@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import './NavStyle.css';
 
-import btn from './images/menu.png';
-
 function Nav(props){
     const [toggle, setToggle] = useState('');
 
     function clickToggle(){
         setToggle(toggle==='' ? 'active' : '');
+    }
+
+    function selectMenu(_menu){
+        clickToggle();
+        props.goMenu(_menu);
     }
 
     return(
@@ -20,10 +23,10 @@ function Nav(props){
                 </div>
 
                 <div className={`menus ${toggle}`}>
-                    <div onClick={() => props.goMenu('Home')}>H</div>
-                    <div onClick={() => props.goMenu('Profile')}>P</div>
-                    <div onClick={() => props.goMenu('Skill')}>S</div>
-                    <div onClick={() => props.goMenu('Project')}>Pr</div>
+                    <div onClick={() => selectMenu('Home')}>H</div>
+                    <div onClick={() => selectMenu('Profile')}>P</div>
+                    <div onClick={() => selectMenu('Skill')}>S</div>
+                    <div onClick={() => selectMenu('Project')}>Pr</div>
                     <div>C</div>
                 </div>
             </div>
