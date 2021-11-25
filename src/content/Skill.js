@@ -14,7 +14,7 @@ function Skill(props){
             <div className='skill-wrapper'>
                 <div className='skill-empty'></div>
 
-                <div className='title'>
+                <div className='skill-title'>
                     "저는 이런 것들을 할 수 있습니다."
                 </div>
 
@@ -87,7 +87,7 @@ function Skill(props){
 
 
 
-                <div className='title'>
+                <div className='skill-title'>
                     "저는 이런 것들을 가지고 있습니다."
                 </div>
                 <div className='certificate'>
