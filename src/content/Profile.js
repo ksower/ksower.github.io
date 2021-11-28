@@ -45,7 +45,7 @@ function Profile(props){
                 </div>
 
 
-                <div className='prof-empty'></div>
+                <div className='prof-empty hr'></div>
             </div>
         </div>
     )

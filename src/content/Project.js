@@ -8,8 +8,8 @@ import Dataset_proj from '../dataset/project_info.json';
 function Project(props){
     const [menu, setMenu] = useState('All');
     const animatedItem = {
-        0: useScrollFadeIn('down', 1, 0),
-        1: useScrollFadeIn('up', 1, 0)
+        0: useScrollFadeIn('down', 1, 0.5),
+        1: useScrollFadeIn('up', 1, 0.6)
     };
 
     function goGithubLink(_link){

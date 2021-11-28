@@ -3,6 +3,7 @@
     background: transparent;
 }
 .prof-empty{height:100px;}
+.prof-empty.hr{width:90%; margin:auto; border-bottom:1px solid #e4e4e4;}
 .prof-wrapper{
     width: 1200px;
     margin-left: 250px;

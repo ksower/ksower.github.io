@@ -3,7 +3,7 @@
     background: transparent;
 }
 .skill-empty1{height:80px;}
-.skill-empty2{height:100px;}
+.skill-empty2{width:90%; height:100px; margin:auto; border-bottom:1px solid #e4e4e4;}
 
 .skill-wrapper{
     width: 1200px;
@@ -41,7 +41,7 @@
 /* SKILL 페이지 skill 별 박스 부분 */
 #skills{
     width: 450px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 #skills #tap{
     margin-bottom: 15px;

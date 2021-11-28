@@ -8,7 +8,7 @@ function Home(props){
         <div className='Home'>
             <div className='home-wrapper'>
                 <div className='home-text'>
-                    개발자<br/>남기범입니다
+                    추억을 남기는 개발자<br/>남기범입니다
                 </div>
                 <div className='home-image'>
                     df

@@ -2,7 +2,7 @@
     width: 100%;
 }
 .proj-empty1{height:80px;}
-.proj-empty2{height:100px;}
+.proj-empty2{width:80%; height:150px; margin:auto; border-bottom:1px solid #e4e4e4;}
 
 .proj-wrapper{
     width: 1200px;
