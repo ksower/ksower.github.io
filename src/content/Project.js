@@ -23,8 +23,11 @@ function Project(props){
             <div className='proj' {...animatedItem[1]}>
                 <div id='title'>{item.title}</div>
                 <div id='image'><img src={require(`${img_src}`).default}/></div>
-                <div id='text'>{item.text}</div>
-                <button id='link' onClick={() => goGithubLink(`${item.link}`)}>github link</button>
+                <div id='tag'></div>
+                <div id='info'>
+                    <div id='text'>test</div>
+                    <button id='link' onClick={() => goGithubLink(`${item.link}`)}>github link</button>
+                </div>
             </div>
         )
     });

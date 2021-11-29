@@ -2,6 +2,10 @@ import React from 'react';
 import './HomeStyle.css';
 
 import back1 from '../images/background_1.jpg';
+// import hb1 from '../images/hb1.jpg';
+// import hb2 from '../images/hb2.jpg';
+// import hb3 from '../images/hb3.jpg';
+// import hb4 from '../images/hb4.jpg';
 
 function Home(props){
     return(
