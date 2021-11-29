@@ -27,7 +27,7 @@ function Nav(props){
                     <div onClick={() => selectMenu('Profile')}>P</div>
                     <div onClick={() => selectMenu('Skill')}>S</div>
                     <div onClick={() => selectMenu('Project')}>Pr</div>
-                    <div>C</div>
+                    <div onClick={() => selectMenu('Contact')}>C</div>
                 </div>
             </div>
 

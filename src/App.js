@@ -17,8 +17,8 @@ function App() {
     function handleScroll(){
         setScrollY(window.pageYOffset);
 
-        // if(scrollY > document.querySelector('.Contact').offsetTop){ setCurrent('CONTACT'); }
-        if(scrollY > document.querySelector('.Project').offsetTop -300){ setCurrent('PROJECT'); }
+        if(scrollY > document.querySelector('.Contact').offsetTop - 300){ setCurrent('CONTACT'); }
+        else if(scrollY > document.querySelector('.Project').offsetTop -300){ setCurrent('PROJECT'); }
         else if(scrollY > document.querySelector('.Skill').offsetTop -300){ setCurrent('SKILL'); }
         else if(scrollY > document.querySelector('.Profile').offsetTop -300){ setCurrent('PROFILE'); }
         else{ setCurrent('HOME'); }
@@ -36,6 +36,7 @@ function App() {
         else if(_menu === 'Profile'){ document.querySelector('.Profile').scrollIntoView({behavior:'smooth'}); }
         else if(_menu === 'Skill'){ document.querySelector('.Skill').scrollIntoView({behavior:'smooth'}); }
         else if(_menu === 'Project'){ document.querySelector('.Project').scrollIntoView({behavior:'smooth'}); }
+        else if(_menu === 'Contact'){ document.querySelector('.Contact').scrollIntoView({behavior:'smooth'}); }
     }
 
     return (

@@ -7,19 +7,36 @@
     width: 1200px;
     height: 100vh;
     margin-left: 250px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: gray;
+    background: white;
 }
 
 .home-text{
-    width: 100%;
-    text-align: center;
-    font-size: 80px;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 50px;
+    line-height: 120px;
+    font-size: 70px;
 }
 .home-image{
     width: 100%;
     background: black;
+}
+.home-image div{
+    width: 25%;
+    height: 100vh;
+    float: left;
+}
+.home-image div:nth-of-type(1){
+    background: linear-gradient(transparent, 80%, blue);
+}
+.home-image div:nth-of-type(2){
+    background: linear-gradient(transparent, 80%, red);
+}
+.home-image div:nth-of-type(3){
+    background: linear-gradient(transparent, 80%, yellow);
+}
+.home-image div:nth-of-type(4){
+    background: linear-gradient(transparent, 80%, green);
 }
 
 

@@ -2,7 +2,8 @@
     width: 100%;
     background: transparent;
 }
-.con-empty{height:100px;}
+.con-empty1{height:150px;}
+.con-empty2{height:200px;}
 .con-wrapper{
     width: 1200px;
     margin-left: 250px;
@@ -11,10 +12,41 @@
 }
 
 
-
 .con-title{
     width: 100%;
     text-align: center;
     font-size: 35px;
     font-family: 'dangdanghae';
+}
+
+
+.con-form{
+    width: 350px;
+    margin: auto;
+    margin-top: 100px;
+}
+.con-form #info{
+    display: grid;
+    grid-template-columns: 120px 230px;
+    margin-top: 40px;
+}
+.con-form #info div{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.con-form #info div img{
+    width: 50px;
+}
+.con-form div p{
+    font-size: 20px;
+    font-family: 'simplehae';
+}
+.con-form #info #link{
+    text-decoration: underline;
+    color: blue;
+}
+.con-form #info #link:hover{
+    color: gray;
 }

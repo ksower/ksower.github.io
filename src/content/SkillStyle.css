@@ -2,8 +2,8 @@
     width: 100%;
     background: transparent;
 }
-.skill-empty1{height:80px;}
-.skill-empty2{width:90%; height:100px; margin:auto; border-bottom:1px solid #e4e4e4;}
+.skill-empty1{height:120px;}
+.skill-empty2{width:90%; height:150px; margin:auto; border-bottom:1px solid #e4e4e4;}
 
 .skill-wrapper{
     width: 1200px;
@@ -104,9 +104,8 @@
     font-size: 24px;
     font-family: 'simplehae';
     text-align: center;
-    border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 5px 5px gray;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 
