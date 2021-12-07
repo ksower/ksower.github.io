@@ -20,12 +20,13 @@
 
 .proj-area{
     margin-top: 50px;
+    display: flex;
+
 }
 
 .proj{
     width: 250px;
     height: 300px;
-    margin: auto;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -79,13 +80,9 @@
 }
 @media screen and (max-width: 1267px){
     .proj-wrapper{width:850px;}
-    .proj{grid-template-columns:1fr;}
-    .proj #title{grid-column-end:2;}
-    .proj #link{grid-column-end:2;}
 }
 @media screen and (max-width: 1117px){
     .proj-wrapper{width:100%; margin-left:0;}
-    .proj #image{margin-left:15%;}
 }
 @media screen and (max-width: 500px){
     .proj-title{font-size:28px;}

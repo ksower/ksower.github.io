@@ -50,3 +50,16 @@
 .con-form #info #link:hover{
     color: gray;
 }
+
+
+
+
+@media screen and (max-width: 1467px){
+    .con-wrapper{width:1000px;}
+}
+@media screen and (max-width: 1267px){
+    .con-wrapper{width:850px;}
+}
+@media screen and (max-width: 1117px){
+    .con-wrapper{width:100%; margin-left:0;}
+}

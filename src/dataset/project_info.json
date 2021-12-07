@@ -4,5 +4,11 @@
         "image":"PNIe.jpg",
         "text":"This program uses IPFS by default. IPFS, simply put, is file-distributed storage storage. This program allows users to upload and download files via IPFS. I use JS-IPFS because it uses java script. The goal was to allow users to upload and download files by group by creating groups, but the swarm key, which was used to distinguish networks in the existing IPFS, cannot be used here. This had the effect of indirectly distinguishing networks through encryption before uploading files. Although the public network is used, when a file is downloaded, only users belonging to the group can verify the file contents through decryption.",
         "link":"https://github.com/ksower/PNIe"
+    },
+    {
+        "title":"mosaicImg",
+        "image":"mosaicImg.png",
+        "text":"This program uses IPFS by default. IPFS, simply put, is file-distributed storage storage. This program allows users to upload and download files via IPFS. I use JS-IPFS because it uses java script. The goal was to allow users to upload and download files by group by creating groups, but the swarm key, which was used to distinguish networks in the existing IPFS, cannot be used here. This had the effect of indirectly distinguishing networks through encryption before uploading files. Although the public network is used, when a file is downloaded, only users belonging to the group can verify the file contents through decryption.",
+        "link":"https://github.com/ksower/Face-Mosaic"
     }
 ]
