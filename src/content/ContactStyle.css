@@ -65,3 +65,6 @@
 @media screen and (max-width: 1117px){
     .con-wrapper{width:100%; margin-left:0;}
 }
+@media screen and (max-width: 500px){
+    .con-title{font-size:23px;}
+}
