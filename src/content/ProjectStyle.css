@@ -21,7 +21,7 @@
 .proj-area{
     margin-top: 50px;
     display: flex;
-
+    justify-content: center;
 }
 
 .proj{
@@ -46,10 +46,8 @@
 }
 .proj #info{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    width: 250px;
+    height: 300px;
     border-radius: 20px;
     background: rgb(0, 0, 0, 0.8);
     opacity: 0;
@@ -80,6 +78,8 @@
 }
 @media screen and (max-width: 1267px){
     .proj-wrapper{width:850px;}
+    .proj-empty1{height:50px;}
+    .proj-empty2{height:60px;}
 }
 @media screen and (max-width: 1117px){
     .proj-wrapper{width:100%; margin-left:0;}

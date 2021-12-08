@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 }
 
 
@@ -113,6 +114,7 @@
     .Nav{width:100px; height:100px;}
     .menubar{margin-top:10px;}
     .menus{transition-delay:0s;}
+    .menu-btn{background:white;}
     .menus.active{margin-top:75px; margin-left:10px;}
     .menus.active div:nth-of-type(2){margin-top:75px; transition-delay:0s;}
     .menus.active div:nth-of-type(3){margin-top:145px; transition-delay:0s;}

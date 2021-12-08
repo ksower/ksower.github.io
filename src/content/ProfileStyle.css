@@ -83,6 +83,7 @@
     .prof-my #intro p{text-align:center;}
     .prof-my #intro div{margin:auto;}
     .prof-exp{grid-template-columns:1fr 1fr;}
+    .prof-empty{height:60px;}
 }
 @media screen and (max-width: 1117px){
     .prof-wrapper{width:100%; margin-left:0;}

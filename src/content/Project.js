@@ -20,7 +20,7 @@ function Project(props){
         const img_src = './project-images/' + item.image;
 
         return(
-            <div className='proj' {...animatedItem[1]}>
+            <div className='proj'>
                 <div id='title'>{item.title}</div>
                 <div id='image'><img src={require(`${img_src}`).default}/></div>
                 <div id='tag'></div>
@@ -41,7 +41,7 @@ function Project(props){
                     "저는 이런 것들을 만들었습니다."
                 </div>
 
-                <div className='proj-area'>
+                <div className='proj-area' {...animatedItem[1]}>
                     {proj_list}
                 </div>
 

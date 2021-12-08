@@ -15,8 +15,8 @@ function Skill(props){
         1: useScrollFadeIn('down', 1, 0.1),
         2: useScrollFadeIn('right', 1, 0.2),
         3: useScrollFadeIn('up', 1, 0.3),
-        4: useScrollFadeIn('down', 1, 0.4),
-        5: useScrollFadeIn('up', 1, 0.5)
+        4: useScrollFadeIn('down', 1, 0.5),
+        5: useScrollFadeIn('up', 1, 0.6)
     };
 
     return(

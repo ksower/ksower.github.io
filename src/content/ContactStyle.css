@@ -59,6 +59,8 @@
 }
 @media screen and (max-width: 1267px){
     .con-wrapper{width:850px;}
+    .con-empty1{height:80px;}
+    .con-empty2{height:90px;}
 }
 @media screen and (max-width: 1117px){
     .con-wrapper{width:100%; margin-left:0;}

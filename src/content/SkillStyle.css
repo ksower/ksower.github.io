@@ -119,6 +119,8 @@
     .skill-tap{width:100%; grid-template-columns:1fr;}
     .skill-tap #exp{width:80%; margin:auto;}
     #skills{width:70%; margin-top:40px;}
+    .skill-empty1{height:50px;}
+    .skill-empty2{height:60px;}
 }
 @media screen and (max-width: 1117px){
     .skill-wrapper{width:100%; margin-left:0;}
