@@ -127,6 +127,6 @@
 }
 @media screen and (max-width: 500px){
     .skill-title{font-size:22px;}
-    .skill-tap #exp{font-size:18px;}
-    .certificate div{width:120px; font-size:20px;}
+    .skill-tap #exp{font-size:17px;}
+    .certificate div{width:120px; font-size:18px;}
 }
