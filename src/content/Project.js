@@ -20,15 +20,16 @@ function Project(props){
         const img_src = './project-images/' + item.image;
 
         return(
-            <div className='proj'>
-                <div id='title'>{item.title}</div>
-                <div id='image'><img src={require(`${img_src}`).default}/></div>
-                <div id='tag'></div>
-                <div id='info'>
-                    <div id='text'>test</div>
-                    <button id='link' onClick={() => goGithubLink(`${item.link}`)}>github link</button>
-                </div>
-            </div>
+            <figure class="proj hover">
+                <img src={require(`${img_src}`).default}/>
+                <figcaption>
+                    <p>The inside of my head was exploding with fireworks. Fortunately, my last thought turned out the lights when it left.</p>
+                    <div class="heading">
+                    <h2>{item.title}</h2>
+                    </div>
+                </figcaption>
+                <a href={`${item.link}`}></a>
+            </figure>
         )
     });
 
