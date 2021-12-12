@@ -20,7 +20,7 @@ function Project(props){
         const img_src = './project-images/' + item.image;
 
         return(
-            <figure class="proj hover">
+            <figure class="proj hover" {...animatedItem[1]}>
                 <img src={require(`${img_src}`).default}/>
                 <figcaption>
                     <p>The inside of my head was exploding with fireworks. Fortunately, my last thought turned out the lights when it left.</p>
@@ -42,7 +42,7 @@ function Project(props){
                     "저는 이런 것들을 만들었습니다."
                 </div>
 
-                <div className='proj-area' {...animatedItem[1]}>
+                <div className='proj-area'>
                     {proj_list}
                 </div>
 
