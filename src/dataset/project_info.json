@@ -2,13 +2,19 @@
     {
         "title":"PNIe",
         "image":"PNIe.jpg",
-        "text":"This program uses IPFS by default. IPFS, simply put, is file-distributed storage storage. This program allows users to upload and download files via IPFS. I use JS-IPFS because it uses java script. The goal was to allow users to upload and download files by group by creating groups, but the swarm key, which was used to distinguish networks in the existing IPFS, cannot be used here. This had the effect of indirectly distinguishing networks through encryption before uploading files. Although the public network is used, when a file is downloaded, only users belonging to the group can verify the file contents through decryption.",
+        "text":"분산 P2P 파일 시스템인 IPFS의 사용 편의성을 높이고, chrome extension으로 개발하여 os에 구애받지 않는 프로그램입니다.",
         "link":"https://github.com/ksower/PNIe"
     },
     {
         "title":"mosaicImg",
         "image":"mosaicImg.png",
-        "text":"This program uses IPFS by default. IPFS, simply put, is file-distributed storage storage. This program allows users to upload and download files via IPFS. I use JS-IPFS because it uses java script. The goal was to allow users to upload and download files by group by creating groups, but the swarm key, which was used to distinguish networks in the existing IPFS, cannot be used here. This had the effect of indirectly distinguishing networks through encryption before uploading files. Although the public network is used, when a file is downloaded, only users belonging to the group can verify the file contents through decryption.",
+        "text":"이미지 혹은 동영상에서 사람의 얼굴을 인식하고, 이를 모자이크, 스티커 등의 처리를 하는 프로그램입니다.",
         "link":"https://github.com/ksower/Face-Mosaic"
+    },
+    {
+        "title":"LAB webpage",
+        "image":"labpage.png",
+        "text":"학교 연구실에 있을 당시 제작한 지금도 사용중인 홈페이지입니다. react언어로 제작하였으며, github page입니다.",
+        "link":"http://cscuou.github.io"
     }
 ]

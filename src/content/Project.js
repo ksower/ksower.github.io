@@ -10,7 +10,8 @@ function Project(props){
     const animatedItem = {
         0: useScrollFadeIn('down', 1, 0.5),
         1: useScrollFadeIn('up', 1, 0.6),
-        2: useScrollFadeIn('up', 1, 0.6)
+        2: useScrollFadeIn('up', 1, 0.6),
+        3: useScrollFadeIn('up', 1, 0.6)
     };
 
     function goGithubLink(_link){
@@ -47,6 +48,17 @@ function Project(props){
                             </div>
                         </figcaption>
                         <a href={`${Dataset_proj[1].link}`}></a>
+                    </figure>
+
+                    <figure class="proj hover" {...animatedItem[3]}>
+                        <img src={require(`${'./project-images/' + Dataset_proj[2].image}`).default}/>
+                        <figcaption>
+                            <p>The inside of my head was exploding with fireworks. Fortunately, my last thought turned out the lights when it left.</p>
+                            <div class="heading">
+                            <h2>{Dataset_proj[2].title}</h2>
+                            </div>
+                        </figcaption>
+                        <a href={`${Dataset_proj[2].link}`}></a>
                     </figure>
                 </div>
 
