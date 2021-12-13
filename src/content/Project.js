@@ -3,7 +3,7 @@ import './ProjectStyle.css';
 
 import useScrollFadeIn from '../hooks/useScrollFadeIn.js';
 
-import Dataset_proj from '../dataset/project_info.json';
+import Dset_proj from '../dataset/project_info.json';
 
 function Project(props){
     const [menu, setMenu] = useState('All');
@@ -17,6 +17,8 @@ function Project(props){
     function goGithubLink(_link){
         window.open(_link);
     }
+
+    const Dataset_proj = Dset_proj;
 
     return(
         <div className='Project'>
