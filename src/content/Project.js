@@ -31,7 +31,7 @@ function Project(props){
                     <figure class="proj hover" {...animatedItem[1]}>
                         <img src={require(`${'./project-images/' + Dataset_proj[0].image}`).default}/>
                         <figcaption>
-                            <p>The inside of my head was exploding with fireworks. Fortunately, my last thought turned out the lights when it left.</p>
+                            <p>{Dataset_proj[0].text}</p>
                             <div class="heading">
                             <h2>{Dataset_proj[0].title}</h2>
                             </div>
@@ -42,7 +42,7 @@ function Project(props){
                     <figure class="proj hover" {...animatedItem[2]}>
                         <img src={require(`${'./project-images/' + Dataset_proj[1].image}`).default}/>
                         <figcaption>
-                            <p>The inside of my head was exploding with fireworks. Fortunately, my last thought turned out the lights when it left.</p>
+                            <p>{Dataset_proj[1].text}</p>
                             <div class="heading">
                             <h2>{Dataset_proj[1].title}</h2>
                             </div>
@@ -53,7 +53,7 @@ function Project(props){
                     <figure class="proj hover" {...animatedItem[3]}>
                         <img src={require(`${'./project-images/' + Dataset_proj[2].image}`).default}/>
                         <figcaption>
-                            <p>The inside of my head was exploding with fireworks. Fortunately, my last thought turned out the lights when it left.</p>
+                            <p>{Dataset_proj[2].text}</p>
                             <div class="heading">
                             <h2>{Dataset_proj[2].title}</h2>
                             </div>
