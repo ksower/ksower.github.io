@@ -9,10 +9,10 @@ import phone from '../images/phone_icon.png';
 
 function Contact(props){
     const animatedItem = {
-        0: useScrollFadeIn('down', 1, 0),
-        1: useScrollFadeIn('up', 1, 0.1),
-        2: useScrollFadeIn('up', 1, 0.2),
-        3: useScrollFadeIn('up', 1, 0.3)
+        0: useScrollFadeIn('down', 1, 0.6),
+        1: useScrollFadeIn('up', 1, 0.7),
+        2: useScrollFadeIn('up', 1, 0.8),
+        3: useScrollFadeIn('up', 1, 0.8)
     };
 
     function goGitStorage(){
