@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './App.css';
+import style from './App.module.css';
 
+import backImg from './images/background_2.jpg';
 import './fonts/font.css';
 
 import Nav from './Nav.js';
@@ -17,11 +18,11 @@ function App() {
     function handleScroll(){
         setScrollY(window.pageYOffset);
 
-        if(scrollY > document.querySelector('.Contact').offsetTop - 300){ setCurrent('CONTACT'); }
-        else if(scrollY > document.querySelector('.Project').offsetTop -300){ setCurrent('PROJECT'); }
-        else if(scrollY > document.querySelector('.Skill').offsetTop -300){ setCurrent('SKILL'); }
-        else if(scrollY > document.querySelector('.Profile').offsetTop -300){ setCurrent('PROFILE'); }
-        else{ setCurrent('HOME'); }
+        // if(scrollY > document.querySelector('.Contact').offsetTop - 300){ setCurrent('CONTACT'); }
+        // else if(scrollY > document.querySelector('.Project').offsetTop -300){ setCurrent('PROJECT'); }
+        // else if(scrollY > document.querySelector('.Skill').offsetTop -300){ setCurrent('SKILL'); }
+        // else if(scrollY > document.querySelector('.Profile').offsetTop -300){ setCurrent('PROFILE'); }
+        // else{ setCurrent('HOME'); }
     }
 
     useEffect(() => {
@@ -32,15 +33,17 @@ function App() {
     })
 
     function clickMenu(_menu){
-        if(_menu === 'Home'){ document.querySelector('.Home').scrollIntoView({behavior:'smooth'}); }
-        else if(_menu === 'Profile'){ document.querySelector('.Profile').scrollIntoView({behavior:'smooth'}); }
-        else if(_menu === 'Skill'){ document.querySelector('.Skill').scrollIntoView({behavior:'smooth'}); }
-        else if(_menu === 'Project'){ document.querySelector('.Project').scrollIntoView({behavior:'smooth'}); }
-        else if(_menu === 'Contact'){ document.querySelector('.Contact').scrollIntoView({behavior:'smooth'}); }
+        // if(_menu === 'Home'){ document.querySelector('.Home').scrollIntoView({behavior:'smooth'}); }
+        // else if(_menu === 'Profile'){ document.querySelector('.Profile').scrollIntoView({behavior:'smooth'}); }
+        // else if(_menu === 'Skill'){ document.querySelector('.Skill').scrollIntoView({behavior:'smooth'}); }
+        // else if(_menu === 'Project'){ document.querySelector('.Project').scrollIntoView({behavior:'smooth'}); }
+        // else if(_menu === 'Contact'){ document.querySelector('.Contact').scrollIntoView({behavior:'smooth'}); }
     }
 
     return (
-        <div className="App">
+        <div className={style.App}>
+            <img className={style.back} src={backImg}/>
+
             <Nav cur={current} goMenu={(_menu) => clickMenu(_menu)}/>
 
             <Home/>

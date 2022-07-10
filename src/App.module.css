@@ -1,0 +1,13 @@
+.App{
+    width: 100%;
+}
+
+img.back{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}

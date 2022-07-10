@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ProfileStyle.css';
+import style from './Profile.module.css';
 
 import useScrollFadeIn from '../hooks/useScrollFadeIn.js';
 
@@ -14,20 +14,20 @@ function Profile(props){
     };
 
     return(
-        <div className='Profile'>
-            <div className='prof-wrapper'>
-                <div className='prof-empty'></div>
+        <div className={style.Profile}>
+            <div className={style.wrapper}>
+                <div className={style.empty}></div>
 
-                <div className='prof-my' {...animatedItem[0]}>
-                    <img id='photo' src={Face}/>
+                <div className={style.my} {...animatedItem[0]}>
+                    <img id={style['photo']} src={Face}/>
 
-                    <div id='intro'>
+                    <div id={style['intro']}>
                         <p><b>남기범</b> / AI & Big-Data Developer</p>
                         <div>"AI와 빅데이터를 이용하여 새로운 가치를 창출하는 개발자 남기범입니다."</div>
                     </div>
                 </div>
 
-                <div className='prof-exp'>
+                <div className={style.exp}>
                     <div {...animatedItem[1]}>
                         <h2>프로그램 설계자</h2>
                         세미나와 코딩 아카데미를 참여하여 프로그램에 대한 기본적인 지식을 공부하였고, 아이디어 공모전 혹은 프로젝트를 진행하면서 프로그램을 설계하는 법을 익혔습니다.
@@ -45,7 +45,7 @@ function Profile(props){
                 </div>
 
 
-                <div className='prof-empty hr'></div>
+                <div className={`${style.empty} ${style.hr}`}></div>
             </div>
         </div>
     )

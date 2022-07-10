@@ -1,8 +1,0 @@
-.App{
-    width: 100%;
-    position: absolute;
-    background-image: url('./images/background_2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: 0;
-}

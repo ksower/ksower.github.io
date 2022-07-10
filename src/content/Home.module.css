@@ -3,14 +3,14 @@
     background: transparent;
 }
 
-.home-wrapper{
+.wrapper{
     width: 1200px;
     height: 100vh;
     margin-left: 250px;
     background: rgb(0, 0, 0, 0.5);
 }
 
-.home-text{width:100%; height:100%;}
+.text{width:100%; height:100%;}
 .svg {width:100%; height:100%;}
 .stroke {
     stroke: white;
@@ -49,20 +49,20 @@
     25%, 55%{ fill-opacity: 0 }
     100% { fill-opacity: 1 }
 }
-#fade-text{font-family:'shiningstar'; font-size: 70px;}
+#fade_text{font-family:'shiningstar'; font-size: 70px;}
 
-.home-image{
+.image{
     width: 100%;
     height: 100%;
 }
 
 
 @media screen and (max-width: 1467px){
-    .home-wrapper{width:1000px;}
+    .wrapper{width:1000px;}
 }
 @media screen and (max-width: 1267px){
-    .home-wrapper{width:850px;}
+    .wrapper{width:850px;}
 }
 @media screen and (max-width: 1117px){
-    .home-wrapper{width:100%; margin-left:0;}
+    .wrapper{width:100%; margin-left:0;}
 }

@@ -2,9 +2,9 @@
     width: 100%;
     background: transparent;
 }
-.prof-empty{height:150px;}
-.prof-empty.hr{width:90%; margin:auto; border-bottom:1px solid #e4e4e4;}
-.prof-wrapper{
+.empty{height:150px;}
+.empty.hr{width:90%; margin:auto; border-bottom:1px solid #e4e4e4;}
+.wrapper{
     width: 1200px;
     margin-left: 250px;
     background: white;
@@ -14,14 +14,14 @@
 
 
 /* PROFILE 페이지 나의 소개 영역 */
-.prof-my{
+.my{
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 300px 1fr;
     align-items: center;
 }
-.prof-my #photo{                /* 프로필 이미지 */
+.my #photo{                /* 프로필 이미지 */
     width: 180px;
     height: 240px;
     margin: auto;
@@ -29,14 +29,14 @@
     border-radius: 10px;
     border: 1px solid gray;
 }
-.prof-my #intro{                /* 소개글 */
+.my #intro{                /* 소개글 */
     margin: auto;
 }
-.prof-my #intro p{
+.my #intro p{
     font-size:20px;
     font-family: 'simplehae';
 }
-.prof-my #intro div{
+.my #intro div{
     width: 80%;
     padding: 30px;
     font-size: 38px;
@@ -49,7 +49,7 @@
 
 
 /* PROFILE 페이지 경험 영역 */
-.prof-exp{
+.exp{
     width: 1000px;
     margin: auto;
     margin-top: 100px;
@@ -58,14 +58,14 @@
     justify-content: center;
     gap: 50px;
 }
-.prof-exp div{
+.exp div{
     width: 100%;
     height: 100%;
     font-family: 'simplehae';
     line-height: 22px;
     color: gray;
 }
-.prof-exp div h2{
+.exp div h2{
     color: black;
 }
 
@@ -73,21 +73,21 @@
 
 
 @media screen and (max-width: 1467px){
-    .prof-wrapper{width:1000px;}
-    .prof-exp{width:80%;}
+    .wrapper{width:1000px;}
+    .exp{width:80%;}
 
 }
 @media screen and (max-width: 1267px){
-    .prof-wrapper{width:850px;}
-    .prof-my{grid-template-columns:1fr;}
-    .prof-my #intro p{text-align:center;}
-    .prof-my #intro div{margin:auto;}
-    .prof-exp{grid-template-columns:1fr 1fr;}
-    .prof-empty{height:60px;}
+    .wrapper{width:850px;}
+    .my{grid-template-columns:1fr;}
+    .my #intro p{text-align:center;}
+    .my #intro div{margin:auto;}
+    .exp{grid-template-columns:1fr 1fr;}
+    .empty{height:60px;}
 }
 @media screen and (max-width: 1117px){
-    .prof-wrapper{width:100%; margin-left:0;}
+    .wrapper{width:100%; margin-left:0;}
 }
 @media screen and (max-width: 600px){
-    .prof-my #intro div{font-size: 34px;}
+    .my #intro div{font-size: 34px;}
 }

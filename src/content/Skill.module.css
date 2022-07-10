@@ -1,0 +1,94 @@
+.Skill{
+    width: 100%;
+    background: transparent;
+}
+.empty1{height:120px;}
+.empty2{width:90%; height:150px; margin:auto; border-bottom:1px solid #e4e4e4;}
+
+.wrapper{
+    width: 1200px;
+    margin-left: 250px;
+    background: white;
+    transition: 0.25s;
+}
+
+/* SKILL 페이지 타이틀 부분 */
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'dangdanghae';
+}
+
+
+.tap{
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "simplehae";
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+/* SKILL 이미지 */
+.img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.img img{
+    width: 100px;
+    margin: 10px;
+    object-fit: contain;
+}
+
+
+
+
+/* SKILL 페이지 자격증 */
+.certificate{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.certificate div{
+    width: 120px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'simplehae';
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+
+@media screen and (max-width: 1467px){
+    .wrapper{width:1000px;}
+}
+@media screen and (max-width: 1267px){
+    .wrapper{width:850px;}
+    .tap{width:100%; grid-template-columns:1fr;}
+    .tap #exp{width:80%; margin:auto;}
+    #skills{width:70%; margin-top:40px;}
+    .empty1{height:50px;}
+    .empty2{height:60px;}
+}
+@media screen and (max-width: 1117px){
+    .wrapper{width:100%; margin-left:0;}
+}
+@media screen and (max-width: 500px){
+    .title{font-size:22px;}
+    .tap #exp{font-size:17px;}
+    .certificate div{width:120px; font-size:18px;}
+}

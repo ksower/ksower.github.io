@@ -1,24 +1,24 @@
 .Project{
     width: 100%;
 }
-.proj-empty1{height:120px;}
-.proj-empty2{width:80%; height:150px; margin:auto; border-bottom:1px solid #e4e4e4;}
+.empty1{height:120px;}
+.empty2{width:80%; height:150px; margin:auto; border-bottom:1px solid #e4e4e4;}
 
-.proj-wrapper{
+.wrapper{
     width: 1200px;
     margin-left: 250px;
     background: white;
     transition: 0.25s;
 }
 
-.proj-title{
+.title{
     width: 100%;
     text-align: center;
     font-size: 26px;
     font-family: 'dangdanghae';
 }
 
-.proj-area{
+.area{
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -29,18 +29,18 @@
 
 
 @media screen and (max-width: 1467px){
-    .proj-wrapper{width:1000px;}
+    .wrapper{width:1000px;}
 }
 @media screen and (max-width: 1267px){
-    .proj-wrapper{width:850px;}
-    .proj-empty1{height:50px;}
-    .proj-empty2{height:60px;}
+    .wrapper{width:850px;}
+    .empty1{height:50px;}
+    .empty2{height:60px;}
 }
 @media screen and (max-width: 1117px){
-    .proj-wrapper{width:100%; margin-left:0;}
+    .wrapper{width:100%; margin-left:0;}
 }
 @media screen and (max-width: 500px){
-    .proj-title{font-size:22px;}
+    .title{font-size:22px;}
 }
 
 

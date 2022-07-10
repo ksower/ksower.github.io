@@ -12,7 +12,6 @@
 }
 
 
-
 /* 메뉴 버튼 */
 .menubar{
     width: 70px;
@@ -23,7 +22,7 @@
     margin-top: 70px;
     margin-left: -35px;
 }
-.menu-btn{
+.menu_btn{
     width: 70px;
     height: 70px;
     position: absolute;
@@ -31,14 +30,15 @@
     background: rgb(0, 0, 0, 0.3);
     cursor: pointer;
     outline: none;
-    z-index: 100;
+    z-index: 101;
 }
-.menu-btn:hover{background:gray;}
-.menu-btn.active{background:black;}
-.menu-btn.active:hover{background: gray;}
+.menu_btn:hover{background:gray;}
+.menu_btn.active{background:black;}
+.menu_btn.active:hover{background: gray;}
+
 
 /* toggle 버튼 디자인 */
-.menu-btn span{
+.menu_btn span{
     width: 40px;
     height: 5px;
     margin-left: 15px;
@@ -48,20 +48,21 @@
     transition: 0.3s;
     transition-delay: 0.3s;
 }
-.menu-btn span:nth-of-type(1){margin-top:18px;}
-.menu-btn span:nth-of-type(2){margin-top:9px;}
-.menu-btn span:nth-of-type(3){margin-top:9px;}
-.menu-btn.active span:nth-of-type(1) {
+.menu_btn span:nth-of-type(1){margin-top:18px;}
+.menu_btn span:nth-of-type(2){margin-top:9px;}
+.menu_btn span:nth-of-type(3){margin-top:9px;}
+.menu_btn.active span:nth-of-type(1) {
     width: 45px;
     background: white;
     transform: translate(-2px, 15px) rotate(-45deg);
 }
-.menu-btn.active span:nth-of-type(2){width: 0px;}
-.menu-btn.active span:nth-of-type(3) {
+.menu_btn.active span:nth-of-type(2){width: 0px;}
+.menu_btn.active span:nth-of-type(3) {
     width: 45px;
     background: white;
     transform: translate(-2px, -13px) rotate(45deg);
 }
+
 
 /* 메뉴 버튼 액션 */
 .menus{
@@ -99,7 +100,7 @@
 
 
 /* 현재 페이지 */
-#current-page{
+#current_page{
     width: auto;
     font-size: 80px;
     font-family: 'dangdanghae';
@@ -109,16 +110,16 @@
 }
 
 
-
+/* 모바일 고려 nav ui 변경*/
 @media screen and (max-width: 1117px){
     .Nav{width:100px; height:100px;}
     .menubar{margin-top:10px;}
     .menus{transition-delay:0s;}
-    .menu-btn{background:white;}
+    .menu_btn{background:white;}
     .menus.active{margin-top:75px; margin-left:10px;}
     .menus.active div:nth-of-type(2){margin-top:75px; transition-delay:0s;}
     .menus.active div:nth-of-type(3){margin-top:145px; transition-delay:0s;}
     .menus.active div:nth-of-type(4){margin-top:215px; transition-delay:0s;}
     .menus.active div:nth-of-type(5){margin-top:285px; transition-delay:0s;}
-    #current-page{visibility:hidden;}
+    #current_page{visibility:hidden;}
 }

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './NavStyle.css';
+import style from './Nav.module.css';
 
 function Nav(props){
     const [toggle, setToggle] = useState('');
 
     function clickToggle(){
-        setToggle(toggle==='' ? 'active' : '');
+        setToggle(toggle==='' ? style.active : '');
     }
 
     function selectMenu(_menu){
@@ -14,15 +14,15 @@ function Nav(props){
     }
 
     return(
-        <div className='Nav'>
-            <div className={`menubar ${toggle}`}>
-                <div className={`menu-btn ${toggle}`} onClick={clickToggle}>
+        <div className={style.Nav}>
+            <div className={`${style.menubar} ${toggle}`}>
+                <div className={`${style.menu_btn} ${toggle}`} onClick={clickToggle}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
 
-                <div className={`menus ${toggle}`}>
+                <div className={`${style.menus} ${toggle}`}>
                     <div onClick={() => selectMenu('Home')}>H</div>
                     <div onClick={() => selectMenu('Profile')}>P</div>
                     <div onClick={() => selectMenu('Skill')}>S</div>
@@ -31,7 +31,7 @@ function Nav(props){
                 </div>
             </div>
 
-            <div id='current-page'>
+            <div id={style['current_page']}>
                 {props.cur}
             </div>
         </div>
