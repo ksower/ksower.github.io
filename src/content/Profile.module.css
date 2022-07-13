@@ -41,6 +41,7 @@
     padding: 30px;
     font-size: 38px;
     font-family: 'shiningstar';
+    line-height: 50px;
     border-left: 3px solid gray;
     border-right: 3px solid gray;
     border-radius: 20px;
@@ -80,14 +81,21 @@
 @media screen and (max-width: 1267px){
     .wrapper{width:850px;}
     .my{grid-template-columns:1fr;}
-    .my #intro p{text-align:center;}
-    .my #intro div{margin:auto;}
+    .my #photo{width:150px; height:200px;}
+    .my #intro p{text-align:center; font-size:19px;}
+    .my #intro div{margin:auto; padding:20px 24px; font-size:32px;}
     .exp{grid-template-columns:1fr 1fr;}
     .empty{height:60px;}
 }
 @media screen and (max-width: 1117px){
     .wrapper{width:100%; margin-left:0;}
+    .my{width:680px;}
+    .exp{width:680px;}
 }
-@media screen and (max-width: 600px){
-    .my #intro div{font-size: 34px;}
+@media screen and (max-width: 750px){
+    .my{width:80%;}
+    .my #photo{width:120px; height:160px;}
+    .my #intro p{font-size:18px;}
+    .my #intro div{padding:22px; font-size:26px; line-height:34px;}
+    .exp{width:80%; margin-top:40px; font-size:14px;}
 }

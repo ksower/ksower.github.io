@@ -8,11 +8,27 @@ import Dset_proj from '../dataset/project_info.json';
 function Project(props){
     const [menu, setMenu] = useState('All');
     const animatedItem = {
-        0: useScrollFadeIn('down', 1, 0.5),
-        1: useScrollFadeIn('up', 1, 0.6),
-        2: useScrollFadeIn('up', 1, 0.6),
-        3: useScrollFadeIn('up', 1, 0.6)
+        0: useScrollFadeIn('down', 1, 0),
+        1: useScrollFadeIn('up', 1, 0.1),
+        2: useScrollFadeIn('up', 1, 0.2),
+        3: useScrollFadeIn('up', 1, 0.3)
     };
+
+    const per_project_div = Dset_proj.map((item, index) => {
+        return(
+            <figure className={style.proj} {...animatedItem[index+1]}>
+                <img src={require(`${'./project-images/' + item.image}`).default}/>
+                <figcaption>
+                    <p>{item.text}</p>
+                    <div className={style.heading}>
+                    <h2>{item.title}</h2>
+                    </div>
+                </figcaption>
+                <a href={`${item.link}`}></a>
+            </figure>
+        );
+    });
+
 
     function goGithubLink(_link){
         window.open(_link);
@@ -30,38 +46,7 @@ function Project(props){
                 </div>
 
                 <div className={style.area}>
-                    <figure className={style.proj} {...animatedItem[1]}>
-                        <img src={require(`${'./project-images/' + Dataset_proj[0].image}`).default}/>
-                        <figcaption>
-                            <p>{Dataset_proj[0].text}</p>
-                            <div className={style.heading}>
-                            <h2>{Dataset_proj[0].title}</h2>
-                            </div>
-                        </figcaption>
-                        <a href={`${Dataset_proj[0].link}`}></a>
-                    </figure>
-
-                    <figure className={style.proj} {...animatedItem[2]}>
-                        <img src={require(`${'./project-images/' + Dataset_proj[1].image}`).default}/>
-                        <figcaption>
-                            <p>{Dataset_proj[1].text}</p>
-                            <div className={style.heading}>
-                            <h2>{Dataset_proj[1].title}</h2>
-                            </div>
-                        </figcaption>
-                        <a href={`${Dataset_proj[1].link}`}></a>
-                    </figure>
-
-                    <figure className={style.proj} {...animatedItem[3]}>
-                        <img src={require(`${'./project-images/' + Dataset_proj[2].image}`).default}/>
-                        <figcaption>
-                            <p>{Dataset_proj[2].text}</p>
-                            <div className={style.heading}>
-                            <h2>{Dataset_proj[2].title}</h2>
-                            </div>
-                        </figcaption>
-                        <a href={`${Dataset_proj[2].link}`}></a>
-                    </figure>
+                    {per_project_div}
                 </div>
 
                 <div className={style.empty2}></div>

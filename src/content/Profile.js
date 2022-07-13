@@ -9,8 +9,8 @@ function Profile(props){
     const animatedItem = {
         0: useScrollFadeIn('up', 1, 0),
         1: useScrollFadeIn('left', 1, 0),
-        2: useScrollFadeIn('up', 1, 0.2),
-        3: useScrollFadeIn('down', 1, 0.3)
+        2: useScrollFadeIn('left', 1, 0.2),
+        3: useScrollFadeIn('left', 1, 0.3)
     };
 
     return(
@@ -22,8 +22,8 @@ function Profile(props){
                     <img id={style['photo']} src={Face}/>
 
                     <div id={style['intro']}>
-                        <p><b>남기범</b> / AI & Big-Data Developer</p>
-                        <div>"AI와 빅데이터를 이용하여 새로운 가치를 창출하는 개발자 남기범입니다."</div>
+                        <p><b>남기범</b> / Data Engineer</p>
+                        <div>"데이터 파이프라인을 구축하고, 분석 기술과 AI를 이용하여 새로운 가치를 창출하는 엔지니어 남기범입니다."</div>
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@ function Profile(props){
 
                     <div {...animatedItem[3]}>
                         <h2>나아가는 개발자</h2>
-                        하고싶은 일을 하고, 만들고 싶은 것을 만들기 위해 지속적으로 세미나에 참여하여 최근 개발 지식을 습득하고 발전시켜 제 역량을 향상시킬 것입니다.
+                        하고싶은 일을 하기 위해 지속적으로 세미나에 참여하여 최근 개발 지식을 습득하고 발전시켜 제 역량을 향상시킬 것입니다.
                     </div>
                 </div>
 

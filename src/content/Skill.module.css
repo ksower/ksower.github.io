@@ -53,20 +53,23 @@
 
 /* SKILL 페이지 자격증 */
 .certificate{
-    width: 80%;
+    width: 850px;
     margin: auto;
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 .certificate div{
-    width: 120px;
+    width: 150px;
+    height: 70px;
     margin: 10px;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
     font-family: 'simplehae';
     text-align: center;
+    
     border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -78,17 +81,19 @@
 }
 @media screen and (max-width: 1267px){
     .wrapper{width:850px;}
-    .tap{width:100%; grid-template-columns:1fr;}
+    .tap{width:680px; grid-template-columns:1fr;}
     .tap #exp{width:80%; margin:auto;}
     #skills{width:70%; margin-top:40px;}
+    .certificate{width: 700px;}
     .empty1{height:50px;}
     .empty2{height:60px;}
 }
 @media screen and (max-width: 1117px){
     .wrapper{width:100%; margin-left:0;}
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 750px){
     .title{font-size:22px;}
-    .tap #exp{font-size:17px;}
-    .certificate div{width:120px; font-size:18px;}
+    .tap{width:80%; font-size:16px;}
+    .certificate{width:450px;}
+    .certificate div{width:130px; font-size:16px;}
 }

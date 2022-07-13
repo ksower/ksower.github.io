@@ -18,8 +18,7 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
         }
     };
 
-    const onScroll = useCallback(
-        ([entry]) => {
+    const onScroll = useCallback(([entry]) => {
         const { current } = element;
         if (entry.isIntersecting) {
             current.style.transitionProperty = 'all';
@@ -37,8 +36,8 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
         let observer;
 
         if (element.current) {
-        observer = new IntersectionObserver(onScroll, { threshold: 0.6 });
-        observer.observe(element.current);
+            observer = new IntersectionObserver(onScroll, { threshold: 0.6 });
+            observer.observe(element.current);
         }
 
         return () => observer && observer.disconnect();
