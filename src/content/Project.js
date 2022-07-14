@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import style from './Project.module.css';
 
 import useScrollFadeIn from '../hooks/useScrollFadeIn.js';
@@ -6,7 +6,9 @@ import useScrollFadeIn from '../hooks/useScrollFadeIn.js';
 import Dset_proj from '../dataset/project_info.json';
 
 function Project(props){
-    const [menu, setMenu] = useState('All');
+    const [isOpen, setIsOpen] = useState(false);
+    const [isTop, setIsTop] = useState(false);
+    const movLoc = useRef([]);
     const animatedItem = {
         0: useScrollFadeIn('down', 1, 0),
         1: useScrollFadeIn('up', 1, 0.1),

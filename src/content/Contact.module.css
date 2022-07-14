@@ -14,7 +14,7 @@
     transition: 0.25s;
 }
 
-
+/* Contact 페이지 타이틀 */
 .title{
     width: 100%;
     height: 50px;
@@ -23,7 +23,7 @@
     font-family: 'dangdanghae';
 }
 
-
+/* Contact 페이지 메일 및 연결 정보 */
 .form{
     width: 350px;
     height: 380px;

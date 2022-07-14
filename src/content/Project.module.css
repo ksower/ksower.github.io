@@ -11,22 +11,20 @@
     transition: 0.25s;
 }
 
+/* Project 페이지 타이틀 */
 .title{
     width: 100%;
     text-align: center;
     font-size: 26px;
     font-family: 'dangdanghae';
 }
-
+/* Project 페이지 프로젝트 영역 */
 .area{
     margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
-
 
 @media screen and (max-width: 1467px){
     .wrapper{width:1000px;}
@@ -45,13 +43,14 @@
 
 
 
+/* project button animation */
 figure.proj {
   font-family: 'dangdanghae';
   position: relative;
   overflow: hidden;
   margin: 10px;
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   background: white;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -153,4 +152,18 @@ figure.proj:hover p{
   opacity: 1;
   -webkit-transition-delay: 0.35s;
   transition-delay: 0.35s;
+}
+
+@media screen and (max-width: 1267px){
+  .wrapper{width:850px;}
+  .empty1{height:50px;}
+  .empty2{height:60px;}
+  figure.proj{width:180px; height:180px; font-size:16px;}
+  figure.proj p{font-size:12px;}
+}
+@media screen and (max-width: 1117px){
+  .wrapper{width:100%; margin-left:0;}
+}
+@media screen and (max-width: 500px){
+  .title{font-size:22px;}
 }
