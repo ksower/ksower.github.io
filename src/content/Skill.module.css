@@ -94,6 +94,6 @@
 @media screen and (max-width: 750px){
     .title{font-size:22px;}
     .tap{width:80%; font-size:16px;}
-    .certificate{width:450px;}
+    .certificate{width:80%; justify-content:center;}
     .certificate div{width:130px; font-size:16px;}
 }
