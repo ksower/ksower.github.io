@@ -5,19 +5,14 @@ function Home(props){
     return(
         <div className={style.Home}>
             <div className={style.wrapper}>
-                <div className={style.text}>
-                    <svg className={style.svg} version="1.1" viewBox="0 0 700 300">
-                        <symbol id={style['fade_text']}>
-                            <text classname={style.text} x="50%" y="65%" text-anchor="middle">데이터를 다루는 개발자</text>
-                            <text classname={style.text} x="50%" y="95%" text-anchor="middle">남기범 입니다.</text>
-                        </symbol>
-                        <g>
-                            <use className={style.stroke} href="#fade-text"/>
-                            <use className={style.fill} href="#fade-text"/>
-                        </g>
-                    </svg>
+                <div className={`${style.title} ${style.ti1}`}>
+                    <div className={`${style.text} ${style.te1}`}>안녕하세요.</div>
                 </div>
-                <div className={style.image}>
+                <div className={`${style.title} ${style.ti2}`}>
+                    <div className={`${style.text} ${style.te2}`}>데이터 엔지니어</div>
+                </div>
+                <div className={`${style.title} ${style.ti3}`}>
+                    <div className={`${style.text} ${style.te3}`}>남기범 입니다.</div>
                 </div>
             </div>
         </div>

@@ -1,14 +1,13 @@
 import React, { useState, useRef } from 'react';
 import style from './Project.module.css';
+import gsap from 'gsap';
 
 import useScrollFadeIn from '../hooks/useScrollFadeIn.js';
-
 import Dset_proj from '../dataset/project_info.json';
 
+import ProjectDivComp from './ProjectDivComp.js';
+
 function Project(props){
-    const [isOpen, setIsOpen] = useState(false);
-    const [isTop, setIsTop] = useState(false);
-    const movLoc = useRef([]);
     const animatedItem = {
         0: useScrollFadeIn('down', 1, 0),
         1: useScrollFadeIn('up', 1, 0.1),
@@ -18,25 +17,34 @@ function Project(props){
 
     const per_project_div = Dset_proj.map((item, index) => {
         return(
-            <figure className={style.proj} {...animatedItem[index+1]}>
+            <figure className={style.proj_short} {...animatedItem[index+1]}>
                 <img src={require(`${'./project-images/' + item.image}`).default}/>
                 <figcaption>
                     <p>{item.text}</p>
                     <div className={style.heading}>
-                    <h2>{item.title}</h2>
+                        <h2>{item.title}</h2>
                     </div>
                 </figcaption>
-                <a href={`${item.link}`}></a>
             </figure>
         );
     });
 
+    const per_project_div_after = Dset_proj.map((item, index) => {
+        return(
+            <ProjectDivComp
+                title={item.title}
+                image={item.image}
+                text={item.text}
+                link={item.link}>
+
+            </ProjectDivComp>
+        )
+    });
 
     function goGithubLink(_link){
         window.open(_link);
     }
 
-    const Dataset_proj = Dset_proj;
 
     return(
         <div className={style.Project}>

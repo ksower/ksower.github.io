@@ -1,0 +1,122 @@
+/* project button animation */
+figure.proj_short {
+    font-family: 'dangdanghae';
+    position: relative;
+    overflow: hidden;
+    width: 230px;
+    height: 230px;
+    background: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+}
+figure.proj_short * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+  }
+  figure.proj_short img {
+    max-width: 100%;
+    position: relative;
+    opacity: 0.9;
+  }
+  figure.proj_short figcaption {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    right: 7%;
+    bottom: 45%;
+    border: 1px solid white;
+    border-width: 1px 1px 0;
+  }
+  figure.proj_short .heading {
+    overflow: hidden;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  figure.proj_short h2 {
+    display: table;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  figure.proj_short h2 span {
+    font-weight: 800;
+  }
+  figure.proj_short h2:before,
+  figure.proj_short h2:after {
+    position: absolute;
+    display: block;
+    width: 1000%;
+    height: 1px;
+    content: '';
+    background: white;
+    top: 50%;
+  }
+  figure.proj_short h2:before {
+    left: -1000%;
+  }
+  figure.proj_short h2:after {
+    right: -1000%;
+  }
+  figure.proj_short p {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    opacity: 0;
+    line-height: 1.6em;
+    font-size: 16px;
+  }
+  figure.proj_short a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  figure.proj_short img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  figure.proj_short:hover img{
+    opacity: 0.25;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  figure.proj_short:hover figcaption{
+    top: 7%;
+    bottom: 7%;
+  }
+  figure.proj_short:hover p{
+    opacity: 1;
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+  }
+  
+  @media screen and (max-width: 1267px){
+    .wrapper{width:850px;}
+    .empty1{height:50px;}
+    .empty2{height:60px;}
+    figure.proj{width:180px; height:180px; font-size:16px;}
+    figure.proj p{font-size:12px;}
+  }
+  @media screen and (max-width: 1117px){
+    .wrapper{width:100%; margin-left:0;}
+  }
+  @media screen and (max-width: 500px){
+    .title{font-size:22px;}
+  }
