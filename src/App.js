@@ -42,7 +42,7 @@ function App() {
 
     return (
         <div className={style.App}>
-            <img className={style.back} src={backImg}/>
+            <img className={style.back} src={backImg} width='100' height='100'/>
 
             <Nav cur={current} goMenu={(_menu) => clickMenu(_menu)}/>
             
