@@ -1,0 +1,21 @@
+.wrapper{
+    position: relative;
+    border-radius: 10px;
+    width: 18em;
+    height: 10em;
+    border: 1px solid black;
+    background: skyblue;
+    transform: rotate(-25deg) skew(-25deg, -5deg);
+}
+
+.box{
+    width: 10em;
+    height: 8em;
+    background: blue;
+    animation: tt 0.5s forwards;
+}
+
+@keyframes tt{
+    0%{margin-left:0;}
+    100%{margin-left: 3em;}
+}
