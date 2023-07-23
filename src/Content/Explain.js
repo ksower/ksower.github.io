@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 const Text = styled.div`
     width: ${props => props.width || '13em'};
@@ -14,6 +14,7 @@ const Text = styled.div`
     color: #585858;
     transform: rotate(-25deg) skew(35deg, -5deg);
     transition: 0.3s;
+    z-index: 100;
 
     &:after{
         content: 'To Link >';
@@ -27,11 +28,17 @@ const Text = styled.div`
         border-radius: 14px;
         background: orange;
         transition: 0.3s;
+        cursor: pointer;
         opacity: 0;
     }
 
     &:hover{
-        &:after{opacity: 1;}
+        &:after{
+            top: -0.5em;
+            left: 0.5em;
+            box-shadow: -0.5em 0.5em 2em gray;
+            opacity: 1;
+        }
     }
 `;
 

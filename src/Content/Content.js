@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 
+import Nav from '../Nav/Nav.js';
 import Comp from './Component.js';
 import Carousel from './Carousel.js';
 import Explain from './Explain.js';
@@ -61,6 +62,8 @@ function Content(props){
 
     return(
         <Wrapper>
+            <Nav/>
+
             <Carousel dataset={comp_list}
                       dataLength={comp_list.length}
                       marginTop="-4em" marginLeft="-8em"
@@ -71,8 +74,8 @@ function Content(props){
                      text={Listup[curIdx].text}
             />
 
-            <Btn value="이전" marginTop="12em" marginLeft="-10em" btnSize="4em" onClick={left_move_comp}/>
-            <Btn value="다음" marginTop="-2em" marginLeft="14em" btnSize="4em" onClick={right_move_comp}/>
+            <Btn imgSrc='./assets/icons/back_arrow.png' marginTop="12em" marginLeft="-10em" btnSize="4em" onClick={left_move_comp}/>
+            <Btn imgSrc='./assets/icons/arrow.png' marginTop="-1em" marginLeft="12em" btnSize="4em" onClick={right_move_comp}/>
         </Wrapper>
     );
 }

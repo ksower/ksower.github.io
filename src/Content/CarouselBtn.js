@@ -11,12 +11,16 @@ const Btn = styled.button`
     margin-left: ${props => props.marginLeft || '-1.5em'};
     border-radius: ${props => props.btnSize || '3em'};
     border: none;
-    background: #cdcdcd;
+    background-size: 2.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(${(props) => props.imgSrc});
     transform: rotate(-25deg) skew(35deg, -5deg);
+    cursor: pointer;
+    transition: 0.2s;
 
     &:hover{
-        color: white;
-        background: #181818;
+        background-size: 3em;
     }
 `;
 
@@ -25,6 +29,7 @@ function CarouselBtn(props){
         <Btn marginTop={props.marginTop}
              marginLeft={props.marginLeft}
              btnSize={props.btnSize}
+             imgSrc={props.imgSrc}
              onClick={props.onClick}
         >
             {props.value}
