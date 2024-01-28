@@ -7,7 +7,7 @@ import Carousel from './Carousel.js';
 import Explain from './Explain.js';
 import Btn from './CarouselBtn.js';
 
-import Listup from '../Dataset/listup.json';
+import Listup from '../../Dataset/listup.json';
 
 const Wrapper = styled.div`
     width: 100vw;
